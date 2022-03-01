@@ -81,9 +81,9 @@ class Property:
                 self.is_furnished,
                 self.has_open_fire,
                 self.has_terrace,
-                self.terrace_area,
+                self.terrace_area if self.has_terrace else "None",
                 self.has_garden,
-                self.garden_area,
+                self.garden_area if self.has_garden else "None",
                 self.surface_land,
                 self.surface_area_plot,
                 self.amount_of_facades,
@@ -134,7 +134,9 @@ test = Property(
     False,
     "normal"
 )
-t = [test,test]
+
+
+t = [test]
 
 with open("test.csv","w",newline="") as stream:
     writer = csv.writer(stream)
