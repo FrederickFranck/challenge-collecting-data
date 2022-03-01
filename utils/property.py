@@ -3,7 +3,7 @@ import csv
 class Property:
     """This class will represent a property"""
 
-    def __init__(self) -> None:
+    """def __init__(self) -> None:
         self.locality: str = None
         self.type: str = None
         self.sub_type: str = None
@@ -22,29 +22,29 @@ class Property:
         self.surface_land: int = None
         self.surface_area_plot: int = None
         self.amount_of_facades: int = None
-        self.building_state: str = None
+        self.building_state: str = None"""
 
     def __init__(
         self,
-        locality: str,
-        _type: str,
-        sub_type: str,
-        price: float,
-        type_of_sale: str,
-        amount_of_rooms: int,
-        area: int,
-        has_full_kitchen: int,
-        is_furnished: bool,
-        has_open_fire: bool,
-        has_terrace: bool,
-        terrace_area: int,
-        has_garden: bool,
-        garden_area: int,
-        surface_land: int,
-        surface_area_plot: int,
-        amount_of_facades: int,
-        has_pool: bool,
-        building_state: str,
+        locality: str = None,
+        _type: str = None,
+        sub_type: str = None,
+        price: float = None,
+        type_of_sale: str = None,
+        amount_of_rooms: int = None,
+        area: int = None,
+        has_full_kitchen: int = None,
+        is_furnished: bool = None,
+        has_open_fire: bool = None,
+        has_terrace: bool = None,
+        terrace_area: int = None,
+        has_garden: bool = None,
+        garden_area: int = None,
+        surface_land: int = None,
+        surface_area_plot: int = None,
+        amount_of_facades: int = None,
+        has_pool: bool = None,
+        building_state: str = None,
     ) -> None:
 
         self.locality: str = locality
@@ -135,12 +135,11 @@ test = Property(
     "normal"
 )
 
-
+"""
 t = [test]
-
 with open("test.csv","w",newline="") as stream:
     writer = csv.writer(stream)
     writer.writerow(Property.header)
     writer.writerows(t)
 
-print("test")
+print("test")"""
