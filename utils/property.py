@@ -1,5 +1,3 @@
-import csv
-
 class Property:
     """This class will represent a property"""
 
@@ -81,9 +79,9 @@ class Property:
                 self.is_furnished,
                 self.has_open_fire,
                 self.has_terrace,
-                self.terrace_area if self.has_terrace else "None",
+                self.terrace_area,
                 self.has_garden,
-                self.garden_area if self.has_garden else "None",
+                self.garden_area,
                 self.surface_land,
                 self.surface_area_plot,
                 self.amount_of_facades,
@@ -92,25 +90,27 @@ class Property:
             ]
         )
 
-    header = ["locality",
-               "type",
-               "sub_type",
-               "price",
-               "type_of_sale",
-               "amount_of_rooms",
-               "area",
-               "has_full_kitchen",
-               "is_furnished",
-               "has_open_fire",
-               "has_terrace",
-               "terrace_area",
-               "has_garden",
-               "garden_area",
-               "surface_land",
-               "surface_area_plot",
-               "amount_of_facades",
-               "has_pool",
-               "building_state"]
+    header = [
+        "locality",
+        "type",
+        "sub_type",
+        "price",
+        "type_of_sale",
+        "amount_of_rooms",
+        "area",
+        "has_full_kitchen",
+        "is_furnished",
+        "has_open_fire",
+        "has_terrace",
+        "terrace_area",
+        "has_garden",
+        "garden_area",
+        "surface_land",
+        "surface_area_plot",
+        "amount_of_facades",
+        "has_pool",
+        "building_state",
+    ]
 
 
 test = Property(
@@ -132,14 +132,5 @@ test = Property(
     284,
     2,
     False,
-    "normal"
+    "normal",
 )
-
-"""
-t = [test]
-with open("test.csv","w",newline="") as stream:
-    writer = csv.writer(stream)
-    writer.writerow(Property.header)
-    writer.writerows(t)
-
-print("test")"""
