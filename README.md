@@ -61,6 +61,8 @@ Frederik Frank :
 
 Saïf Malkshahi:
 - Search page result automation 
+- ReadMe file
+- Alternate Scrapper
 
 Lelo Tokwaulu:
 - Properties links collection 
