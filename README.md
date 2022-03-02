@@ -1,6 +1,6 @@
 
 ## Description
-Our program will scrape a real estate website ([Immoweb](https://www.immoweb.be/en)) for data about houses and apartments in Belgium. 
+Our program will scrape a real estate website ([Immoweb](https://www.immoweb.be/en)) for data about houses and apartments in Belgium.
 Once the information is fetched it will be cleaned and stored in a CSV file.
 
 ## Installation
