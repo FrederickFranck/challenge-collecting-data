@@ -2,6 +2,9 @@ from typing import List
 import csv
 from utils.property import Property
 from utils.scrape_house import parse_property
+import datetime
+
+start = datetime.datetime.now()
 
 
 def print_to_csv(properties: List[Property]) -> None:
@@ -37,6 +40,8 @@ def main():
             continue
 
     print_to_csv(properties)
+    end = datetime.datetime.now()
+    print(f"Execution time : {(end - start)}")
 
 
 if __name__ == "__main__":
