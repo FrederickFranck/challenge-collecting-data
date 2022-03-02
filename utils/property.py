@@ -1,27 +1,6 @@
 class Property:
     """This class will represent a property"""
 
-    """def __init__(self) -> None:
-        self.locality: str = None
-        self.type: str = None
-        self.sub_type: str = None
-        self.price: float = None
-        self.type_of_sale: str = None
-        self.amount_of_rooms: int = None
-        self.area: int = None
-        self.has_full_kitchen: bool = None
-        self.is_furnished: bool = None
-        self.has_open_fire: bool = None
-        self.has_pool: bool = None
-        self.has_terrace: bool = None
-        self.terrace_area: int = None
-        self.has_garden: bool = None
-        self.garden_area: int = None
-        self.surface_land: int = None
-        self.surface_area_plot: int = None
-        self.amount_of_facades: int = None
-        self.building_state: str = None"""
-
     def __init__(
         self,
         locality: str = None,
@@ -111,26 +90,3 @@ class Property:
         "has_pool",
         "building_state",
     ]
-
-
-test = Property(
-    "De Panne",
-    "House",
-    "rijhuis",
-    299000,
-    "normal",
-    4,
-    284,
-    True,
-    True,
-    False,
-    False,
-    None,
-    False,
-    None,
-    193,
-    284,
-    2,
-    False,
-    "normal",
-)
