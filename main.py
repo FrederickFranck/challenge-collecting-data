@@ -36,8 +36,8 @@ def main():
     threads = []
 
     print("Scrapping Links")
-    urls = get_links("links.txt")
-    # urls = read_urls("links.txt")
+    #urls = get_links("links.txt")
+    urls = read_urls("links.txt")
     print("Scrapping")
 
     url_chunks = []
