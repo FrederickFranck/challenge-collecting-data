@@ -15,7 +15,7 @@ start = datetime.datetime.now()
 def print_to_csv(properties: List[Property]) -> None:
     """Function which loops over properties and writes them to a CSV file"""
 
-    with open("test.csv", "w", newline="") as stream:
+    with open("Immoweb_Data_Scraper.csv", "w", newline="") as stream:
         writer = csv.writer(stream)
         writer.writerow(Property.header)
         writer.writerows(properties)
