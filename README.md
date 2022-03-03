@@ -1,7 +1,7 @@
 
 # BeCode Data Collection Challenge by:
 
-### Frederik Franck, Saïf Malkshahi and Lelo Tokwaulu
+### [Frederik Franck](https://github.com/FrederickFranck), [Saïf Malkshahi](https://github.com/saifalbaghdadi) and [Lelo Tokwaulu](https://github.com/lelotok)
 --------------------------------------------------------------------------------------
 
 ## Description
@@ -51,6 +51,52 @@ After this is will divide the links into chunks of 500 urls and scrape the data 
 Data would be outputted in (Immoweb_Data_Scraper.csv).
 
 Our program will give these fields about each property: locality, type of property (house or apartment, bungalow, chalet, mansion...), price, type of sale (exclusion or life sale), number of rooms, area, kitchen type, garden, terrace, and swimming pool availability as well as some additional properties.
+
+## Data
+
+We create a dataset which holds the following columns :
+
+- Locality
+- Type of property (House/apartment)
+- Subtype of property (Bungalow, Chalet, Mansion, ...)
+- Price
+- Type of sale (Exclusion of life sales)
+- Number of rooms
+- Area
+- Fully equipped kitchen (Yes/No)
+- Furnished (Yes/No)
+- Open fire (Yes/No)
+- Terrace (Yes/No)
+  - If yes: Area
+- Garden (Yes/No)
+  - If yes: Area
+- Surface of the land
+- Surface area of the plot of land
+- Number of facades
+- Swimming pool (Yes/No)
+- State of the building (New, to be renovated, ...)
+
+## Files
+
+```main.py```: The Complete Project
+
+### utils
+
+```property.py```: Contains class to store all the data 
+
+```items_urls.py```: Code to scrape all the links of different properties
+
+```scrape_house.py```: Code to scrape the data for each individual property
+
+
+### data
+
+```links.txt```: Contains all the links scrapped by ```items_urls.py```
+
+```Immoweb_Data_Scraper.csv```: Contains all the [data](#data) formatted as CSV file described in here
+
+
+
 
 Contributions:
 --------------
