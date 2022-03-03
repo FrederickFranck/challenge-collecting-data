@@ -15,7 +15,7 @@ start = datetime.datetime.now()
 def print_to_csv(properties: List[Property]) -> None:
     """Function which loops over properties and writes them to a CSV file"""
 
-    with open("Immoweb_Data_Scraper.csv", "w", newline="") as stream:
+    with open(".data/Immoweb_Data_Scraper.csv", "w", newline="") as stream:
         writer = csv.writer(stream)
         writer.writerow(Property.header)
         writer.writerows(properties)
@@ -36,8 +36,8 @@ def main():
     threads = []
 
     print("Scrapping Links")
-    #urls = get_links("links.txt")
-    urls = read_urls("links.txt")
+    #urls = get_links("./data/links.txt")
+    urls = read_urls("./data/links.txt")
     print("Scrapping")
 
     url_chunks = []
